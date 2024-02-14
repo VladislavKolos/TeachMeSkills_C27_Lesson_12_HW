@@ -14,7 +14,7 @@ public class Runner {
         System.out.println("Enter text: ");
         Scanner scanner = new Scanner(System.in);
         String inputText = scanner.nextLine();
-        Solution.displayAbbreviations(inputText);
+        Solution.highlightAndDisplayAbbreviations(inputText);
 
 
     }

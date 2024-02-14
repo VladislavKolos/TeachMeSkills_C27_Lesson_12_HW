@@ -4,16 +4,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Class with static method to display abbreviations
+ * Class with static method to highlight and display abbreviations
  * contains a constant REGEX.
  */
 public final class Solution {
     static final String REGEX = "\\b([A-Z]{2,6})\\b";
-
     private Solution() {
     }
 
-    public static void displayAbbreviations(String inputText) {
+    public static void highlightAndDisplayAbbreviations(String inputText) {
         Pattern pattern = Pattern.compile(REGEX);
         Matcher matcher = pattern.matcher(inputText);
 
